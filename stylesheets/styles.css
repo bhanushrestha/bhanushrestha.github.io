@@ -18,8 +18,37 @@ body {
   background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAeCAYAAABNChwpAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEgAACxIB0t1+/AAAABx0RVh0U29mdHdhcmUAQWRvYmUgRmlyZXdvcmtzIENTNXG14zYAAAAUdEVYdENyZWF0aW9uIFRpbWUAMy82LzEygrTcTAAAAFRJREFUSIljfPDggZRf5RIGGNjUHsNATz6jXmSL1Kb2GLiAX+USBnrymRgGGDCORgFmoNAXjEbBaBSMRsFoFIxGwWgUjEbBaBSMRsFoFIxGwWgUAABYNujumib3wAAAAABJRU5ErkJggg==') fixed;
 }
 
+#header_div 
+{
+  height: 250px;
+  background: linear-gradient(135deg, #CEDEDE, #DEEEDE);
+  border: 0px;
+  border-radius: 3px;
+
+}
+
+#header_div div
+{
+ 
+  margin-left: 10px;
+}
+
+#header_div div h1
+{
+
+  margin-left: 20%;
+}
+
+#profile_image
+{
+  position: absolute;
+  height: 241px;
+  width: 211px;
+  margin: -205px 0% 0px 64%;
+}
+
 .wrapper {
-  width: 640px;
+  width: 80%;
   margin: 0 auto;
   background: #DEDEDE;
   -webkit-border-radius: 8px;
