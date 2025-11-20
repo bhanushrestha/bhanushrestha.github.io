@@ -1,204 +1,445 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
 
 <head>
-     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhanu Shrestha | Researcher & Engineer</title>
+    <meta name="description" content="Researcher in Biometrics and Computer Vision. Former Software Engineer.">
 
-     <title>Bhanu Shrestha Resume</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
 
-     <style type="text/css">
-        * { margin: 0; padding: 0; }
-        body { font: 16px Helvetica, Sans-Serif; line-height: 24px; background: url(images/noise.jpg); }
-        .clear { clear: both; }
-        #page-wrap { width: 800px; margin: 40px auto 60px; }
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;700&display=swap"
+        rel="stylesheet">
 
-        #pic { float: right; margin: -30px 0 0 0; height: 200px;width: 400px;}
-        h1 { margin: 0 0 16px 0; padding: 0 0 16px 0; font-size: 42px; font-weight: bold; letter-spacing: -2px; border-bottom: 1px solid #999; }
-        h2 { font-size: 20px; margin: 0 0 6px 0; position: relative; }
-        h2 span { position: absolute; bottom: 0; right: 0; font-style: italic; font-family: Georgia, Serif; font-size: 16px; color: #999; font-weight: normal; }
-        p { margin: 0 0 16px 0; }
-        a { color: #999; text-decoration: none; border-bottom: 1px dotted #999; }
-        a:hover { border-bottom-style: solid; color: black; }
-        ul { margin: 0 0 32px 17px; list-style: none;padding: 0px; }
-        #objective { width: 500px; float: left; }
-        #objective p { font-family: Georgia, Serif; font-style: italic; color: #666; }
-        dt { font-style: italic; font-weight: bold; font-size: 18px; text-align: right; padding: 0 26px 0 0; width: 150px; float: left; height: 100px; border-right: 1px solid #999;  }
-        dd { width: 600px; float: right; }
-        dd.clear { float: none; margin: 0; height: 15px; }
-        .circular {
-            float: right;
-            align:center;
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-                width: 300px;
-                height: 300px;
-                background-size: cover;
-                border-radius: 150px;
-                -webkit-border-radius: 150px;
-                -moz-border-radius: 150px;
-                background-image: url("images/pp.jpg");
-                background-repeat:no-repeat;
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Outfit', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: '#3b82f6',
+                        secondary: '#8b5cf6',
+                        dark: '#0f172a',
+                        'dark-lighter': '#1e293b',
+                    },
+                    animation: {
+                        'blob': 'blob 7s infinite',
+                        'fade-in': 'fadeIn 1s ease-out forwards',
+                        'slide-up': 'slideUp 0.8s ease-out forwards',
+                    },
+                    keyframes: {
+                        blob: {
+                            '0%': { transform: 'translate(0px, 0px) scale(1)' },
+                            '33%': { transform: 'translate(30px, -50px) scale(1.1)' },
+                            '66%': { transform: 'translate(-20px, 20px) scale(0.9)' },
+                            '100%': { transform: 'translate(0px, 0px) scale(1)' },
+                        },
+                        fadeIn: {
+                            '0%': { opacity: '0' },
+                            '100%': { opacity: '1' },
+                        },
+                        slideUp: {
+                            '0%': { opacity: '0', transform: 'translateY(20px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        }
+                    }
                 }
+            }
+        }
+    </script>
 
-                .social{
-                	float: right;
-                	margin-top: 50px;
-                }
-                .socialImages{
-                	border-radius: 15px;
-                	height: 75px;
-                }
+    <style>
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
 
-     </style>
+        ::-webkit-scrollbar-track {
+            background: #0f172a;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #334155;
+            border-radius: 4px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #475569;
+        }
+
+        .glass-card {
+            background: rgba(30, 41, 59, 0.7);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .gradient-text {
+            background: linear-gradient(to right, #60a5fa, #a78bfa);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
 </head>
 
-<body>
+<body class="bg-dark text-slate-300 font-sans antialiased selection:bg-primary selection:text-white overflow-x-hidden">
 
-    <div id="page-wrap">
-    
-        
-    
-        <div id="contact-info" class="vcard">
-        
-            <!-- Microformats! -->
-        
-            <h1 class="fn">Bhanu Shrestha</h1>
-            <div  class="circular"></div>
-            
-            <p>
-                
-                Email: <a class="email" href="mailto:bhanu.shrestha@outlook.com">bhanu.shrestha@outlook.com</a>
-            </p>
+    <!-- Background Gradients -->
+    <div class="fixed inset-0 z-[-1] overflow-hidden pointer-events-none">
+        <div
+            class="absolute top-0 left-1/4 w-96 h-96 bg-blue-500/20 rounded-full mix-blend-screen filter blur-3xl opacity-30 animate-blob">
         </div>
-                
-        <div id="objective">
-            
-            <p style="text-align:justify;padding:15px;">
-                I am a software engineer with experience in building complex distributed systems, working with reactive applications and container services with basic proficiency dealing with devops related tasks. I have worked on projects in Java, C++ and Go Lang.
-                
-                <br><br>
-                Besides programing I also have good communication, presentation and leadership skills gained working as an MSP for Prime College during which I managed to gain valuable experience regarding organizing events, public speaking and leading various events for students as well as blogging and information flow through social media.
-    
-            </p>
+        <div
+            class="absolute top-0 right-1/4 w-96 h-96 bg-purple-500/20 rounded-full mix-blend-screen filter blur-3xl opacity-30 animate-blob animation-delay-2000">
         </div>
+        <div
+            class="absolute -bottom-32 left-1/3 w-96 h-96 bg-pink-500/20 rounded-full mix-blend-screen filter blur-3xl opacity-30 animate-blob animation-delay-4000">
+        </div>
+    </div>
 
-        <div class="social">
-        	<a href="https://github.com/bhanushrestha"><img src="images/github.png" class="socialImages"/></a>
-        	<a href="https://np.linkedin.com/in/bhanushrestha"><img src="images/linkedInLogo.png" class="socialImages"/></a>
-        	</div>
-        
-        <div class="clear"></div>
-        
-        <dl>
-            <dd class="clear"></dd>
-            
-            <dt>Organizational experience</dt>
-            <dd>
-                <h2>Software Engineer : June 2015 - Present; Fusemachines Nepal, Kathmandu</h2><br>
-                <p><ul>
-                    <li>Worked in a fintech application dealing with distributed systems </li>
-                    <li>Developed various REST APIs using Spring Boot as well as created REST applications with C++ and Go Lang </li>
-                    <li>Worked with technologies such as kafka, docker, spring framework, mongoDB </li>
-                   </ul>
+    <div class="max-w-5xl mx-auto px-6 py-12 md:py-20">
+
+        <!-- Header Section for Profile -->
+        <header class="flex flex-col md:flex-row items-center md:items-start gap-8 mb-20 animate-fade-in">
+            <div class="relative group">
+                <div
+                    class="absolute -inset-1 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200">
+                </div>
+                <img src="images/pp.jpg" alt="Bhanu Shrestha"
+                    class="relative w-40 h-40 md:w-48 md:h-48 rounded-full object-cover border-4 border-dark shadow-2xl">
+            </div>
+
+            <div class="text-center md:text-left flex-1">
+                <h1 class="font-heading text-4xl md:text-6xl font-bold text-white mb-2 tracking-tight">
+                    Bhanu <span class="gradient-text">Shrestha</span>
+                </h1>
+                <h2 class="text-xl md:text-2xl text-slate-400 mb-4 font-light">
+                    PhD Candidate, NTNU
+                </h2>
+                <p class="text-slate-400 max-w-2xl leading-relaxed mb-6 text-justify">
+                    Currently pursuing an integrated PhD at the department of computer science with Colourlab group at
+                    NTNU i Gjøvik. Formerly a Senior Software Engineer experienced in building distributed systems
+                    across diverse tech stacks, and later an IT Officer leading digital transformation from the ground
+                    up. Skilled in streamlining operations, planning, and managing individual tasks as well as larger
+                    organizational administrative processes. Now, focused on advancing the state-of-the-art in computer
+                    vision and biometric security with a focus on understanding and utilizing human cognition with
+                    respect to face image manipulation detection.
                 </p>
-            </dd>
-           <dd class="clear"></dd>
-            <dt>Education</dt>
-            <dd>
-                <h2>Bachelors in Science - Computer Science and Information Technology</h2><br>
-                <p><strong>Institute: </strong> Prime College<br />
-                   <strong>University: </strong> Tribhuwan University<br>
-                   <strong>Batch: </strong> 2011-2015<br>
-                   Completed the course with Distinction.
-                </p> 
-            </dd>
-            
-            <dd class="clear"></dd>
-            
-            <dt>Trainings and Certificates</dt>
-            <dd>
-                <ul>
-                <li>  Advanced Java Training at Pagoda Academy (<i>Now LeapFrog Academy</i>)</li>
-                <li>  Microsoft Technology Associate on Fundamentals of Software Development</li>
-                <li>  Microsfot Certified Professional for Programming in HTML5 with JavaScript and CSS</li>
-                <li>  Windows 8.1 App Dev Camp at MIC Nepal</li>
-                <li> Windows Office App Dev Camp at MIC Nepal</li>
-            </ul>
 
-                
-            </dd>
-            
-            <dd class="clear"></dd>
-            
-            <dt>Independent Projects</dt>
-            <dd>
-                <h2>Information recording system<span>Indreni Kennel Club, 2015</span></h2>
-                <ul>
-                    <li>Web app to manage and view records of clients and dogs </li>
-                    <li>Manage daily vaccination and other activities related to technicians</li>
-                    <li>Efficient searching and editing of records</li>
-                    <li><b>Developed using core JSP as backend</b></li>
-                </ul>
-                <h2>Energy Profile in Nepalees Household <span>Space App 2015 Project</span></h2>
-                <ul>
-                    <li>Data visualization of energy usage statistics obtained from AEPC Nepal</li>
-                    <li>Calculation of alternate energy production potential from households</li>
-                    <li>Promotion of alternate energy using </li>
-                    <li><b>My contribution to project includes creation of bio gas potential calculator using JQuery</b></li>
-                </ul> 
-            </dd>
-            <dd class="clear"></dd>
+                <div class="flex flex-wrap justify-center md:justify-start gap-4">
+                    <a href="https://np.linkedin.com/in/bhanushrestha" target="_blank"
+                        class="px-6 py-2 rounded-full bg-white/5 hover:bg-white/10 border border-white/10 transition-all hover:scale-105 flex items-center gap-2">
+                        <i class="fab fa-linkedin text-blue-600"></i> LinkedIn
+                    </a>
+                    <a href="mailto:bhanu.shrestha@outlook.com"
+                        class="px-6 py-2 rounded-full bg-white/5 hover:bg-white/10 border border-white/10 transition-all hover:scale-105 flex items-center gap-2">
+                        <i class="fas fa-envelope text-blue-400"></i> Private Email
+                    </a>
+                    <a href="mailto:bhanu.shrestha@ntnu.no"
+                        class="px-6 py-2 rounded-full bg-white/5 hover:bg-white/10 border border-white/10 transition-all hover:scale-105 flex items-center gap-2">
+                        <i class="fas fa-university text-purple-400"></i> University Email
+                    </a>
+                    <a href="https://github.com/bhanushrestha" target="_blank"
+                        class="px-6 py-2 rounded-full bg-white/5 hover:bg-white/10 border border-white/10 transition-all hover:scale-105 flex items-center gap-2">
+                        <i class="fab fa-github text-gray-400"></i> GitHub
+                    </a>
+                </div>
+            </div>
+        </header>
 
-            <dt>Other Experiences</dt>
-            <dd>
-                <h2>Microsoft Student Partner 2014<span> MIC Nepal/ Prime College</span></h2>
-                <ul>
-                    <li>Conducted various programs, events, trainings and presentations in the capacity of MSP 2014 Prime College</li>
-                </ul>
+        <!-- Main Content Grid -->
+        <main class="grid grid-cols-1 md:grid-cols-12 gap-10">
 
-                <br>
-                
-                <h2>Windows 8.1 App dev camp <span>Prime College</span></h2>
-                <ul>
-                    <li>Conducted 5 day App Dev Camp for BIM 6th semester students of Prime College</li>
-                    <li>The dev camp focused on making students adept at using Visual Studio IDE as a development environment</li>
-                    <li>Over 55 participants each of whom created an App on Windows 8.1 platform</li>
-                    
-                </ul> 
+            <!-- Left Column (About & Skills) -->
+            <div class="md:col-span-4 space-y-10 animate-slide-up" style="animation-delay: 0.2s;">
 
-                <h2>Participation Space App Hackathon 2015<span>NASA/ICIMOD/ YIPL</span></h2>
-                <br>
-                <h2>Participation CityApp Hackathon 2014<span>MIC Nepal</span></h2>
-                <br>
-                <h2>General Secretary at Prime IT Club<span>Prime IT Club/ Prime College</span></h2>
-                    <ul>
-                        <li>Prime IT club is common meeting platform for all Technology Enthusiasts and IT Entrepreneurs.</li>
-                        <li>My work as the General Secretary of the club includes managing the various events and activities of the club. </li>
-                        <li>We plan various activities to promote enthusiasm amongst various students related to IT.</li>
-                    </ul>
-            </dd>
-            
-            <dd class="clear"></dd>
+                <!-- Research Interests -->
+                <section class="glass-card p-6 rounded-2xl">
+                    <h3 class="font-heading text-xl font-bold text-white mb-4 flex items-center gap-2">
+                        <i class="fas fa-microscope text-purple-400"></i> Research Focus
+                    </h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span
+                            class="px-3 py-1 rounded-md bg-purple-500/10 text-purple-300 text-sm border border-purple-500/20">Biometrics</span>
+                        <span
+                            class="px-3 py-1 rounded-md bg-blue-500/10 text-blue-300 text-sm border border-blue-500/20">Computer
+                            Vision</span>
+                        <span
+                            class="px-3 py-1 rounded-md bg-emerald-500/10 text-emerald-300 text-sm border border-emerald-500/20">Deep
+                            Learning</span>
+                        <span
+                            class="px-3 py-1 rounded-md bg-pink-500/10 text-pink-300 text-sm border border-pink-500/20">Face
+                            Recognition</span>
+                        <span
+                            class="px-3 py-1 rounded-md bg-orange-500/10 text-orange-300 text-sm border border-orange-500/20">Face
+                            Morph
+                            Detection</span>
+                    </div>
+                </section>
 
-            <dt>Awards and Recognition</dt>
-            <dd>
-                <h2>Microsoft Student Partner of the year 2014<span>MIC Nepal</span></h2>
-            </dd>
+                <!-- Tech Stack -->
+                <section class="glass-card p-6 rounded-2xl">
+                    <h3 class="font-heading text-xl font-bold text-white mb-4 flex items-center gap-2">
+                        <i class="fas fa-code text-blue-400"></i> Tech Stack
+                    </h3>
 
-            <dd class="clear"></dd>
-            <dd class="clear"></dd>
-            
-            <dt>References</dt>
-            <dd>Available on request</dd>
-            
-            <dd class="clear"></dd>
-        </dl>
-        
-        <div class="clear"></div>
+                    <div class="space-y-4">
+                        <div>
+                            <h4 class="text-sm font-semibold text-slate-400 mb-2">Languages</h4>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="text-slate-300 bg-slate-800 px-2 py-1 rounded text-sm">Python</span>
+                                <span class="text-slate-300 bg-slate-800 px-2 py-1 rounded text-sm">Java</span>
+                                <span class="text-slate-300 bg-slate-800 px-2 py-1 rounded text-sm">Go</span>
+                                <span class="text-slate-300 bg-slate-800 px-2 py-1 rounded text-sm">C++</span>
+                            </div>
+                        </div>
 
-        
-    
+                        <div>
+                            <h4 class="text-sm font-semibold text-slate-400 mb-2">Frameworks & Tools</h4>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="text-slate-300 bg-slate-800 px-2 py-1 rounded text-sm">SpringBoot</span>
+                                <span class="text-slate-300 bg-slate-800 px-2 py-1 rounded text-sm">ReactJs</span>
+                                <span class="text-slate-300 bg-slate-800 px-2 py-1 rounded text-sm">FastAPI</span>
+                                <span class="text-slate-300 bg-slate-800 px-2 py-1 rounded text-sm">OpenCV</span>
+                                <span class="text-slate-300 bg-slate-800 px-2 py-1 rounded text-sm">Docker</span>
+                                <span class="text-slate-300 bg-slate-800 px-2 py-1 rounded text-sm">PyTorch</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Education -->
+                <section class="glass-card p-6 rounded-2xl">
+                    <h3 class="font-heading text-xl font-bold text-white mb-4 flex items-center gap-2">
+                        <i class="fas fa-graduation-cap text-emerald-400"></i> Education
+                    </h3>
+                    <div class="space-y-6">
+                        <div class="relative pl-4 border-l-2 border-slate-700">
+                            <div class="absolute -left-[5px] top-2 w-2 h-2 rounded-full bg-emerald-500"></div>
+                            <h4 class="text-white font-medium">MACS</h4>
+                            <p class="text-sm text-slate-400">Norwegian University of Science and Technology</p>
+                            <p class="text-xs text-slate-500 mt-1 mb-4">2022 - 2024 </p>
+                            <div class="absolute -left-[5px] top-28 w-2 h-2 rounded-full bg-emerald-500"></div>
+                            <h4 class="text-white font-medium pt-1">B.Sc. CSIT</h4>
+                            <p class="text-sm text-slate-400">Tribhuwan University (Prime College)</p>
+                            <p class="text-xs text-slate-500 mt-1">2011 - 2015 </p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="glass-card p-6 rounded-2xl group hover:cursor-pointer hover:transition-shadow">
+                    <h3 class="font-heading text-xl font-bold text-white mb-4 flex items-center gap-2">
+                        <i class="fas fa-book text-indigo-400"></i> Master Thesis Project
+                    </h3>
+                    <div class="space-y-6">
+                        <div class="relative pl-2">
+                            <h4
+                                class="text-white tracking-wider before:content-['“'] after:content-['”'] text-center mb-6">
+                                Understanding Cognition and Competence of Human Observers in Detecting Manipulated
+                                Faces
+                            </h4>
+                            <p class="
+                                text-sm text-justify text-slate-500 mt-1 mb-4 
+                                text-base
+
+                                group-hover:text-slate-100
+                                transition-colors
+                                ">
+                                Studied the impact of a unique facial manipulation technique on facial recognition
+                                systems and human detection ability. Developed platform to collect and analyze data from
+                                infrared eye-trackers,
+                                created a diverse dataset of manipulated faces, and conducted experiments with 40
+                                participants to analyze cognitive processes and fixation patterns. Findings reveal key
+                                vulnerabilities in both humans and automated facial recognition systems and insights
+                                into
+                                manipulation detection and human competence.
+                            </p>
+                            <p class="text-xs text-right text-slate-500 mt-1 mb-4">
+                                Delivered: June 2025
+                            </p>
+                        </div>
+
+                        <div class="flex flex-row-reverse gap-2">
+                            <span class="text-xs px-2 py-1 rounded bg-slate-800 text-slate-300">Python</span>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+
+            <!-- Right Column (Experience & Projects) -->
+            <div class="md:col-span-8 space-y-10 animate-slide-up" style="animation-delay: 0.4s;">
+
+                <!-- Experience Section -->
+                <section>
+                    <h3 class="font-heading text-2xl font-bold text-white mb-6 flex items-center gap-3">
+                        <span class="bg-blue-500/20 p-2 rounded-lg text-blue-400"><i
+                                class="fas fa-briefcase"></i></span>
+                        Experience
+                    </h3>
+
+                    <div class="space-y-6">
+                        <!-- Current Role -->
+                        <div class="glass-card p-6 rounded-2xl hover:border-blue-500/30 transition-colors group">
+                            <div class="flex flex-col md:flex-row justify-between md:items-start mb-4">
+                                <div>
+                                    <h4
+                                        class="text-xl font-bold text-white group-hover:text-blue-400 group-hover:transition-transform group-hover:-translate-y-1 transition-colors">
+                                        Integrated PhD</h4>
+                                    <p class="text-slate-400">Department of Computer Science, NTNU</p>
+                                </div>
+                                <span
+                                    class="mt-2 md:mt-0 px-3 py-1 rounded-full bg-blue-500/10 text-blue-300 text-xs font-medium border border-blue-500/20 self-start group-hover:transition-transform group-hover:-translate-y-1">
+                                    Oct 2023 - Present
+                                </span>
+                            </div>
+                            <p class="text-slate-300 mb-4">
+                            <ul
+                                class="list-inside text-slate-300 space-y-2 marker:text-blue-500 text-justify tracking-tight">
+                                <li> Advanced research in the field of biometrics,
+                                    focusing
+                                    on robust face
+                                    recognition systems and face manipulation detection specifically face morph attack
+                                    detection. </li>
+                                <li> Applying deep learning techniques to solve real-world face image manipulation
+                                    challenges. </li>
+                                <li> Human training and collaboration with real life human observers working in the
+                                    field of biometric security.</li>
+                            </ul>
+                            </p>
+                        </div>
+
+                        <!-- Past Role -->
+                        <div class="glass-card p-6 rounded-2xl hover:border-purple-500/30 transition-colors group">
+                            <div class="flex flex-col md:flex-row justify-between md:items-start mb-4">
+                                <div>
+                                    <h4
+                                        class="text-xl font-bold text-white group-hover:text-purple-400 group-hover:transition-transform group-hover:-translate-y-1 transition-colors">
+                                        IT Officer</h4>
+                                    <p class="text-slate-400">Swarnim School</p>
+                                </div>
+                                <span
+                                    class="mt-2 md:mt-0 px-3 py-1 rounded-full bg-slate-700 text-slate-300 text-xs font-medium self-start group-hover:bg-purple-600 group-hover:text-slate-300 group-hover:transition-transform group-hover:-translate-y-1 transition-colors">
+                                    Sep 2019 - Aug 2022
+                                </span>
+                            </div>
+                            <ul class="list-inside text-slate-300 space-y-2 marker:text-purple-500">
+                                <li>Led the end-to-end migration of school operations from paper-based workflows to a
+                                    digital ecosystem.</li>
+                                <li>Conducted various activities to build up digital literacy across the school
+                                    community of 50+ teachers and staff as well as 800+ students and their guardians.
+                                </li>
+                                <li>Served as part of the administrative team, utilizing data analysis to assist in
+                                    long-term policy planning and streamlining day-to-day operations.
+                                </li>
+                                <li>Maintained and optimized the full suite of hardware and software used at the school,
+                                    ensuring reliability of the digital infrastructure.</li>
+                            </ul>
+                        </div>
+                        <div class="glass-card p-6 rounded-2xl hover:border-teal-500/30 transition-colors group">
+                            <div class="flex flex-col md:flex-row justify-between md:items-start mb-4">
+                                <div>
+                                    <h4
+                                        class="text-xl font-bold text-white group-hover:text-teal-400 transition-colors group-hover:transition-transform group-hover:-translate-y-1">
+                                        Sr. Software Engineer</h4>
+                                    <p class="text-slate-400">Fusemachines Nepal</p>
+                                </div>
+                                <span
+                                    class="mt-2 md:mt-0 px-3 py-1 rounded-full bg-slate-700 text-slate-300 text-xs font-medium self-start group-hover:bg-teal-600 group-hover:transition-transform group-hover:-translate-y-1">
+                                    Jun 2015 - Aug 2019
+                                </span>
+                            </div>
+                            <ul class="list-inside text-slate-300 space-y-2 marker:text-teal-500">
+                                <li>Worked on designing the architectecture and development of distributed fintech
+                                    applications using Java and Spring
+                                    Boot.</li>
+                                <li>Research and develoment to build high-performance microservices with Go and C++.
+                                </li>
+                                <li>Research and implementation of event-driven architectures using reactive programming
+                                    and system deployment via Docker
+                                    containers.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Projects / Publications Section -->
+                <!-- TODO: Sadly Placeholder for now but update along with publications -->
+                <!-- <section>
+                    <h3 class="font-heading text-2xl font-bold text-white mb-6 flex items-center gap-3">
+                        <span class="bg-emerald-500/20 p-2 rounded-lg text-emerald-400"><i
+                                class="fas fa-project-diagram"></i></span>
+                        Selected Projects / Publications
+                    </h3>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6"> -->
+                <!-- Publication #1 -->
+                <!-- <div class="glass-card p-6 rounded-2xl hover:-translate-y-1 transition-transform duration-300">
+                            <h4 class="text-lg font-bold text-white mb-2">Paper Details</h4>
+                            <p class="text-sm text-slate-400 mb-4">Journal Name</p>
+                            <p class="text-slate-300 text-sm mb-4">
+                                Short Description
+                            </p>
+                            <div class="flex gap-2">
+                                <span class="text-xs px-2 py-1 rounded bg-slate-800 text-slate-300">Topic Tag#1</span>
+                                <span class="text-xs px-2 py-1 rounded bg-slate-800 text-slate-300">Topic Tag#2</span>
+                            </div>
+                        </div> -->
+
+                <!-- Future Publications-->
+                <!-- <div class="glass-card p-6 rounded-2xl hover:-translate-y-1 transition-transform duration-300">
+                            <h4 class="text-lg font-bold text-white mb-2">Paper Details</h4>
+                            <p class="text-sm text-slate-400 mb-4">Journal Name</p>
+                            <p class="text-slate-300 text-sm mb-4">
+                                Short Description
+                            </p>
+                            <div class="flex gap-2">
+                                <span class="text-xs px-2 py-1 rounded bg-slate-800 text-slate-300">Topic Tag#1</span>
+                                <span class="text-xs px-2 py-1 rounded bg-slate-800 text-slate-300">Topic Tag#2</span>
+                            </div>
+                        </div>
+                    </div>
+                </section> -->
+
+                <!-- Awards -->
+                <section>
+                    <h3 class="font-heading text-2xl font-bold text-white mb-6 flex items-center gap-3">
+                        <span class="bg-yellow-500/20 p-2 rounded-lg text-yellow-400"><i
+                                class="fas fa-trophy"></i></span>
+                        Awards
+                    </h3>
+                    <div class="glass-card p-6 rounded-2xl flex items-center gap-4">
+                        <div class="bg-yellow-500/20 p-3 rounded-full text-yellow-400">
+                            <i class="fas fa-award text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-lg font-bold text-white">Microsoft Student Partner of the Year</h4>
+                            <p class="text-slate-400 text-sm">2014 • MIC Nepal</p>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+        </main>
+
+        <footer class="mt-20 pt-8 border-t border-slate-800 text-center text-slate-500 text-sm">
+            <p> Bhanu Shrestha </p>
+        </footer>
+
     </div>
 
 </body>
